@@ -19,3 +19,10 @@ docker run --name mysqldb --network docker-spring-mysql -e MYSQL_ROOT_PASSWORD=1
 docker ps 
 
 docker exec -it <containerid> bash
+
+**step 4:**  :build the jar file 
+mvn clean install
+
+
+**step 5:** build the docker image 
+docker build -t application.jar .
