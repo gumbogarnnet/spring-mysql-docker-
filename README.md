@@ -1,6 +1,6 @@
 # spring-mysql-docker-
 
-**Step** **1:** pull the image 
+**Step** **1:** pull the mysql image 
 
 docker pull mysql:latest
 
