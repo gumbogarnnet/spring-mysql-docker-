@@ -27,8 +27,8 @@ mvn clean install
 
 **step 5:** build the docker image 
 
-docker build -t application.jar .
+docker build -t application .
 
 **step 6:**  run application image  inside the network 
 
-docker run --network docker-spring-mysql --name application  -p 8080:8080 -d application.jar 
+docker run --network docker-spring-mysql --name application  -p 8080:8080 -d application 
