@@ -1,4 +1,6 @@
-# spring-mysql-docker-
+# spring-mysql-docker
+
+**ps:use container name instead of local host** 
 
 **Step** **1:** pull the mysql image 
 
