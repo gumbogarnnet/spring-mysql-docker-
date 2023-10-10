@@ -1,6 +1,6 @@
 # spring-mysql-docker
 
-**PS:use container name instead of local host** 
+_**PS:use container name instead of local host**_
 
 **Step** **1:** pull the mysql image 
 
@@ -12,7 +12,7 @@ docker network create docker-spring-mysql
 
 **step** **3:** run mysql  image in container
 
-docker run  --network docker-spring-mysql  --name mysqldb -e MYSQL_ROOT_PASSWORD=1234 -d -p 3306:3306 mysql:5.7.13
+docker run  --network docker-spring-mysql  --name mysqldb -e MYSQL_ROOT_PASSWORD=1234 -d  mysql:5.7.13
 
 **step 4:** access mysql bash in bash 
 
@@ -22,7 +22,9 @@ docker exec -it <containerid> bash
 
 **step 4:**  :build the jar file 
 
-mvn clean install
+_skiped **mvn clean install** as the tests were failing application was failing to communicate with mysql container_
+
+mvn package -DskipTests
 
 
 **step 5:** build the docker image 
