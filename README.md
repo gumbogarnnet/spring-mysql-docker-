@@ -18,7 +18,7 @@ docker run  --network docker-spring-mysql  --name mysqldb -e MYSQL_ROOT_PASSWORD
 
 docker ps 
 
-docker exec -it <<containerid>> bash
+docker exec -it '<containerid>' bash
 
 **step 4:**  :_build the jar file_ 
 
